@@ -1,18 +1,20 @@
 # FitnessApp
 
-A backend API project built using FastAPI for managing users and workouts
+A REST API built with FastAPI that providdes secure user authentication and workout management for the FitnessApp frontend.
 
 ## Features
 
 - User Registration
 - JWT authentication
 - Login system
-- Protected routes
+- Protected endpoints
 - Create, read, update, delete workouts
 - Workouts specific to each user
 - Pagination
 - SQLAlchemy
-- SQLite Database
+- PostgreSQL Database
+- CORS support for React Frontend
+- Automated testing with pytest
 
 
 ## API Preview
@@ -22,12 +24,19 @@ A backend API project built using FastAPI for managing users and workouts
 
 ## Tech Stack
 
+- Python
 - FastApi
 - SQLAlchemy
-- SQLite
+- PostgreSQL
 - JWT Authentication
 - Passlib / bcrypt
 - Pytest
+- Uvicorn
+
+## Deployment
+
+- Backend deployed on Vercel
+- PostgreSQL database hosted on Neon
 
 ## Installation
 
@@ -53,7 +62,8 @@ http://127.0.0.1:8000/docs
 
 ## Future Improvements
 
-- REACT frontend development
-- PostgreSQL support
 - Docker deployment
+- Refresh tokens for JWT authentication
+- Rate limiting
+- Improved API documentation
 

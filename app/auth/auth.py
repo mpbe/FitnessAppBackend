@@ -45,7 +45,7 @@ def get_current_user(token: str = Depends(oauth2_scheme),
         # returns payload dict
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
 
-        user_id = payload.get("sub")
+        user_id = payload.get("user_id")
 
         if user_id is None:
             raise HTTPException(status_code=401, detail="Invalid token")

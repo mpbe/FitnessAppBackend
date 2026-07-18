@@ -5,6 +5,7 @@ from app.database import engine, Base
 from app.routers import users, workouts
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import config
+from fastapi.responses import RedirectResponse
 
 app = FastAPI()
 
@@ -32,6 +33,7 @@ app.add_middleware(
 app.include_router(users.router)
 app.include_router(workouts.router)
 
-@app.get("/")
+
+@app.get("/", include_in_schema=False)
 def homepage():
-    return {"message": "head to /docs to preview the app's core functionality"}
+    return RedirectResponse("/docs")
