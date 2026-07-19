@@ -2,6 +2,11 @@
 
 A REST API built with FastAPI that providdes secure user authentication and workout management for the FitnessApp frontend.
 
+## Deployment
+
+- Backend deployed on Vercel https://fitness-app-green-eta.vercel.app/
+- PostgreSQL database hosted on Neon
+
 ## Features
 
 - User Registration
@@ -33,10 +38,6 @@ A REST API built with FastAPI that providdes secure user authentication and work
 - Pytest
 - Uvicorn
 
-## Deployment
-
-- Backend deployed on Vercel
-- PostgreSQL database hosted on Neon
 
 ## Installation
 
